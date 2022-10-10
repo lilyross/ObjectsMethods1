@@ -23,14 +23,17 @@ public class Author {
         return this.name + " " + this.surname;
     }
 
+    @Override
     public String toString() {
         return "Автор: " + this.name + this.surname;
     }
 
-    public boolean equals(Objects objects) {
-        return super.equals(objects);
+    @Override
+    public boolean equals(Object object) {
+        return super.equals(object);
     }
 
+    @Override
     public int hashCode() {
         return Objects.hash(name, surname);
     }
